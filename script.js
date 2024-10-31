@@ -76,7 +76,7 @@ function loadContent(page) {
         contentDiv.innerHTML = `
           <h2>Our Management</h2>
           <div class="management-info">
-            <img src="C:/Users/muran/Downloads/passport.jpg" alt="CEO Mike Murango" class="ceo-img">
+            <img src="Images/passport.jpg" alt="CEO Mike Murango" class="ceo-img">
             <h3>Mike Murango, CEO</h3>
             <p>At NexWave Data Solutions, we are driven by a singular vision: to harness the transformative power of technology and data to catalyze global change.</p>
             <p>Under the leadership of our founder and CEO, Mike Murango, we strive to revolutionize how businesses approach the world’s most pressing challenges.</p>
@@ -92,37 +92,37 @@ function loadContent(page) {
           <h2>Our Services</h2>
           <div class="services-grid">
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/ANALYTIC.png" alt="Data Analytics">
+              <img src="Images/ANALYTIC.png" alt="Data Analytics">
               <h3>Data Analytics</h3>
               <p>Transform raw data into actionable insights to drive your business forward.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/prediction.jpg" alt="Predictive Analytics">
+              <img src="Images/prediction.jpg" alt="Predictive Analytics">
               <h3>Predictive Analytics</h3>
               <p>Utilize historical data to predict future trends and make data-driven decisions.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/machine learning.jpg" alt="Machine Learning & AI">
+              <img src="Images/machine learning.jpg" alt="Machine Learning & AI">
               <h3>Machine Learning & AI</h3>
               <p>Leverage advanced algorithms to build intelligent systems that learn and adapt.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/web.png" alt="Web Development">
+              <img src="Images/web.png" alt="Web Development">
               <h3>Web Development</h3>
               <p>Develop responsive and scalable websites tailored to your business needs.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/app.png" alt="Mobile App Development">
+              <img src="Images/app.png" alt="Mobile App Development">
               <h3>Mobile App Development</h3>
               <p>Create user-friendly mobile applications for both Android and iOS platforms.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/ODPC Social media banner (1).jpg" alt="Data Protection Services">
+              <img src="Images/ODPC Social media banner (1).jpg" alt="Data Protection Services">
               <h3>Data Protection Services</h3>
               <p>Data controller and processor registration, audits, and training to ensure compliance with data protection regulations.</p>
             </div>
             <div class="service-box">
-              <img src="C:/Users/muran/Downloads/cybersecurity.jpg" alt="Cybersecurity Services">
+              <img src="Images/cybersecurity.jpg" alt="Cybersecurity Services">
               <h3>Cybersecurity Services</h3>
               <p>Protect your digital assets with our comprehensive cybersecurity solutions.</p>
             </div>
