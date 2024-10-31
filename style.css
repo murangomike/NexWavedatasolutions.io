@@ -1,0 +1,220 @@
+:root {
+  --blue: #0056b3;
+  --orange: #ff6600;
+  --white: #ffffff;
+  --light-gray: #f0f0f0;
+  --dark-gray: #333333;
+  --hover-orange: #e55b00;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+header {
+  background-color: var(--orange);
+  padding: 20px;
+}
+
+.company-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: var(--white);
+  animation: colorChange 5s infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: var(--orange);
+  }
+  100% {
+    color: red;
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--blue);
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: var(--orange);
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  color: var(--blue);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+  color: var(--orange);
+}
+
+.faq-item p {
+  display: none;
+  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+}
+
+.blog-item {
+  margin-bottom: 1.5rem;
+}
+
+.blog-item button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blog-item button:hover {
+  background-color: var(--hover-orange);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  margin-top: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+}
+
+#contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: var(--hover-orange);
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.service-box {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  margin: 1rem;
+}
+
+.footer-section h3 {
+  color: var(--orange);
+  margin-top: 0;
+}
+
+.footer-section a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--orange);
+}
+
+/* Flexbox to align the logo and company name horizontally */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo */
+.header-content .logo {
+  max-height: 50px; /* Adjust the height as needed */
+  margin-right: 20px; /* Space between the logo and company name */
+}
+
+/* Style the company name */
+.header-content h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--white);
+}

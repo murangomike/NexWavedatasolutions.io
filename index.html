@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - NexWave Data Solutions</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexWave Data Solutions</title>
+  <style>
+    body {
+      background-color: #FFF3E0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styles */
+    header {
+      background-color: orange;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-content .logo {
+      max-height: 50px;
+      margin-right: 20px;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      animation: colorChange 5s infinite;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: red;
+      }
+
+      25% {
+        color: blue;
+      }
+
+      50% {
+        color: green;
+      }
+
+      75% {
+        color: orange;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    nav {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .nav-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-list li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .nav-list a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Partners section styles */
+    .partners {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .partners-grid {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .partner-box {
+      text-align: center;
+      max-width: 200px;
+      margin: 10px;
+    }
+
+    .partner-box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1E88E5;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-top: 0;
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+    }
+
+    .footer-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin: 5px 0;
+    }
+
+    main {
+      padding: 20px;
+      text-align: left;
+    }
+
+    /* FAQ styles */
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.active .faq-content {
+      max-height: 150px;
+      /* Adjust this value based on content */
+    }
+
+    .faq-item.active h3 {
+      color: #1E88E5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Header content with logo and company name -->
+    <div class="header-content">
+      <img src="C:/Users/muran/Downloads/logo.png" alt="Company Logo" class="logo">
+      <h1>NexWave Data Solutions</h1>
+    </div>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#" onclick="loadContent('home')">Home</a></li>
+        <li><a href="#" onclick="loadContent('about-us')">About Us</a></li>
+        <li><a href="#" onclick="loadContent('management')">Management</a></li>
+        <li><a href="#" onclick="loadContent('services')">Services</a></li>
+        <li><a href="#" onclick="loadContent('contact')">Contact Us</a></li>
+        <li><a href="#" onclick="loadContent('terms')">Terms & Conditions</a></li>
+        <li><a href="#" onclick="loadContent('privacy')">Privacy Policy</a></li>
+        <li><a href="#" onclick="loadContent('faq')">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- Content will be dynamically loaded here -->
+    <h2>Welcome to NexWave Data Solutions</h2>
+    <p>We provide innovative data solutions to help businesses thrive in the digital age.</p>
+  </main>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>Our Partners</h2>
+    <div class="partners-grid">
+      <div class="partner-box">
+        <img src="C:\Users\muran\Downloads\aws.png" alt="AWS">
+        <p>AWS - Cloud computing services to power your business.</p>
+      </div>
+      <div class="partner-box">
+        <img src="C:\Users\muran\Downloads\apache.png" alt="Apache Spark">
+        <p>Apache Spark - Fast data processing for large-scale data analytics.</p>
+      </div>
+      <div class="partner-box">
+        <img src="C:\Users\muran\Downloads\safaricom.jpg" alt="Safaricom">
+        <p>Safaricom - Leading telecommunications and mobile money services.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-section">
+      <h3>Company</h3>
+      <p>NexWave Data Solutions</p>
+      <p>The Foundry, Westlands</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+    <div class="footer-section">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#" onclick="loadContent('terms')">Terms & Conditions</a></li>
+        <li><a href="#" onclick="loadContent('privacy')">Privacy Policy</a></li>
+        <li><a href="#" onclick="loadContent('faq')">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#" onclick="loadContent('home')">Home</a></li>
+        <li><a href="#" onclick="loadContent('about-us')">About Us</a></li>
+        <li><a href="#" onclick="loadContent('contact')">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:admin@NexWavedatasolutions.io">admin@NexWavedatasolutions.io</a></p>
+      <p>Phone: <a href="tel:+254791303899">+254 791 303 899</a></p>
+      <p>Phone: <a href="tel:+254791234034">+254 791 234 034</a></p>
+    </div>
+    <div class="footer-section">
+      <p>&copy; 2024 NexWave Data Solutions. All rights reserved.</p>
+      <p>NexWave Data Solutions™ is a trademark of NexWave data Solutions.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Function to load content dynamically
+    function loadContent(page) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = `<h2>Loading ${page.replace(/-/g, ' ')}...</h2>`;
+      contentDiv.classList.add("fade-out");
+      // Simulate an AJAX call to load the content
+      setTimeout(() => {
+        switch (page) {
+          case 'home':
+            contentDiv.innerHTML = `
+              <h2>Welcome to NexWave Data Solutions</h2>
+              <p>We provide innovative data solutions to help businesses thrive in the digital age.</p>
+            `;
+            break;
+          case 'about-us':
+            contentDiv.innerHTML = `
+              <h2>About Us</h2>
+              <p>NexWave Data Solutions is a leading provider of data analytics and cybersecurity services.</p>
+            `;
+            break;
+          case 'management':
+            contentDiv.innerHTML = `
+              <h2>Management</h2>
+              <p>Our management team consists of experienced professionals in the tech industry.</p>
+            `;
+            break;
+          case 'services':
+            contentDiv.innerHTML = `
+              <h2>Services</h2>
+              <p>We offer a wide range of services including:</p>
+              <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Data Protection Services</li>
+                <li>Cybersecurity Services</li>
+              </ul>
+            `;
+            break;
+          case 'contact':
+            contentDiv.innerHTML = `
+              <h2>Contact Us</h2>
+              <p>You can reach us at <a href="mailto:admin@NexWavedatasolutions.io">admin@NexWavedatasolutions.io</a>.</p>
+            `;
+            break;
+          case 'terms':
+            contentDiv.innerHTML = `
+              <h2>Terms & Conditions</h2>
+              <p>Read our terms and conditions carefully before using our services.</p>
+            `;
+            break;
+          case 'privacy':
+            contentDiv.innerHTML = `
+              <h2>Privacy Policy</h2>
+              <p>Learn how we handle your personal data in our privacy policy.</p>
+            `;
+            break;
+          case 'faq':
+            contentDiv.innerHTML = `
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-item">
+                <h3>What services do you offer?</h3>
+                <div class="faq-content">
+                  <p>We offer data analytics, cybersecurity, web development, and mobile app development services.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <h3>How can I contact customer support?</h3>
+                <div class="faq-content">
+                  <p>You can reach our customer support team by emailing admin@NexWavedatasolutions.tech.</p>
+                </div>
+              </div>
+            `;
+            setupFAQInteraction(); // Ensure FAQ interaction is set up
+            break;
+          default:
+            contentDiv.innerHTML = `<h2>Page not found.</h2>`;
+        }
+        contentDiv.classList.remove("fade-out");
+      }, 500);
+    }
+    // Function to add interactivity to FAQ section
+    function setupFAQInteraction() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
