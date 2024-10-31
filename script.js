@@ -18,7 +18,7 @@ function loadContent(page) {
         contentDiv.innerHTML = `
           <h1>Welcome to NexWave Data Solutions</h1>
           <p>Your Partner in Data Analytics, Machine Learning, and App Development</p>
-          <img src="C:/Users/muran/Downloads/anal2.jpg" alt="Technology Background">
+          <img src="Images/myriam-jessier-VCtI-0qlVgA-unsplash.jpg" alt="Technology Background">
           <h2>Our Latest Blogs</h2>
           <div class="blog-item">
             <h3>Machine Learning</h3>
